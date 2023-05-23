@@ -1,0 +1,7 @@
+altair==4.0.0
+streamlit==1.22.0
+Pillow==9.5.0
+pdf2image
+pytesseract==0.3.10
+ai4bharat-transliteration
+
