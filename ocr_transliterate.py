@@ -1,15 +1,8 @@
 import streamlit as st
 import pandas as pd
-import cv2
-from PIL import Image, ImageEnhance
-import numpy as np
+from PIL import Image
 import os
-import time ,sys
-from streamlit_embedcode import github_gist
-import urllib.request
-import urllib
-import moviepy.editor as moviepy
-from pydoc import doc
+import time, sys
 import pdf2image
 import pytesseract
 from ai4bharat.transliteration import XlitEngine
