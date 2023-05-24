@@ -1,3 +1,1 @@
 apt install tesseract-ocr
-export TESSDATA_PREFIX='/usr/share/tesseract-ocr/4.00/tessdata/'
-cp guj.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
