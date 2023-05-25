@@ -31,7 +31,7 @@ def main():
             # To read image file buffer as a PIL Image:
             image = Image.open(img_file)
             text = pytesseract.image_to_string(image, lang="guj")
-            st.table(text)
+            st.write(text)
     elif choice == "Transliterated version (English)":
         st.header("Transliterated version (English)")
         read_me_0.empty()
@@ -44,7 +44,7 @@ def main():
             image = Image.open(img_file)
             text = pytesseract.image_to_string(image, lang="guj")
             docx_text = xlit_engine.translit_sentence(text, 'gu')
-            st.text_area(docx_text)
+            st.write(docx_text)
             
     elif choice == "About":   
         print()
