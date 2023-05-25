@@ -1,9 +1,5 @@
 import streamlit as st
-import pandas as pd
 from PIL import Image
-import os
-import time, sys
-import pdf2image
 import pytesseract
 from ai4bharat.transliteration import XlitEngine
 
