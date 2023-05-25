@@ -19,7 +19,7 @@ def main():
     xlit_engine = load_model()
     choice  = st.sidebar.selectbox("MODE",("About","Text from Image (Gujarati)","Transliterated version (English)"))
     text = ""
-    if choice == "OCR version (Gujarati)":
+    if choice == "Text from Image (Gujarati)":
         read_me_0.empty()
         read_me.empty()
         # GlobalHydra.instance().clear()
