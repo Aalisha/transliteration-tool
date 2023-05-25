@@ -31,7 +31,7 @@ def main():
             # To read image file buffer as a PIL Image:
             image = Image.open(img_file)
             text = pytesseract.image_to_string(image, lang="guj")
-            st.text_area(text)
+            st.table(text)
     elif choice == "Transliterated version (English)":
         st.header("Transliterated version (English)")
         read_me_0.empty()
