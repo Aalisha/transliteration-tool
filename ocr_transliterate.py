@@ -30,9 +30,9 @@ def main():
         if img_file is not None:
             # To read image file buffer as a PIL Image:
             image = Image.open(img_file)
-	    with st.spinner('Please Wait ...'):
-    		time.sleep(5)
-            	text = pytesseract.image_to_string(image, lang="guj")
+		with st.spinner('Please Wait ...'):
+			time.sleep(5)
+            		text = pytesseract.image_to_string(image, lang="guj")
             st.write(text)
     elif choice == "Transliterated version (English)":
         st.header("Transliterated version (English)")
