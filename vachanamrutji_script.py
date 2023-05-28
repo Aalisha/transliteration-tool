@@ -21,7 +21,7 @@ def load_transliteration_from_image(image, xlit_engine):
     return docx_text
 
 def main():
-    new_title = '<p style="font-size: 42px;">Vachanamrutji Transliteration App!</p>'
+    new_title = '<p style="font-size: 42px;">Vachanamrutji Transliteration Tool!</p>'
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
     read_me = st.markdown("""
     This project was built using Streamlit and Ai4-bharat transliteration  
