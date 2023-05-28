@@ -51,7 +51,7 @@ def main():
         read_me_0.empty()
         read_me.empty()
         st.subheader('Patrank screenshot:')
-        st.write('Please upload a screenshot image of the Patrank (png/ jpg) to get a translilterated version in English.')
+        st.write('Please upload a screenshot image of the Patrank (png/ jpg) to get a translilterated version from Gujarati to English.')
         with st.form("transliterate_patrank"):
             img_file = st.file_uploader(label="patrank_transliterated_version", label_visibility="hidden")
             submitted = st.form_submit_button("Submit")
