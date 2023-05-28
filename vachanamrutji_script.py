@@ -3,6 +3,8 @@ from PIL import Image
 import pytesseract
 from ai4bharat.transliteration import XlitEngine
 
+img = Image.open('Raj_Gurudev.png')
+st.set_page_config(page_title='Vachanamrutji Transliteration tool', page_icon=img, initial_sidebar_state="expanded")
 
 @st.cache_resource
 def load_model():
