@@ -11,22 +11,22 @@ def load_model():
     return xlit_engine
 
 def main():
-    new_title = '<p style="font-size: 42px;">Vachanamrutji Transliteration App!</p>'
+    new_title = '<p style="font-size: 42px;">Transliteration App!</p>'
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
     read_me = st.markdown("""
     This project was built using Streamlit and Ai4-bharat transliteration  
     to create transliterated version of Patranks from Gujarati to English.""")
     st.sidebar.title("Select Activity")
     xlit_engine = load_model()
-    values =["About", "Patrank Transliteration (English)"]
+    values =["About", "Transliteration (English)"]
     choice  = st.sidebar.selectbox("MODE", values, index=1)
     text = ""
     docx_text = ""
-    if choice == "Patrank Transliteration (English)":
-        st.header("Patrank Transliteration (English)")
+    if choice == "Transliteration (English)":
+        st.header("Transliteration (English)")
         read_me_0.empty()
         read_me.empty()
-        st.write('Please upload an image screenshot of the Patrank (png/ jpg) to get a translilterated version from **Gujarati** in **English**.')
+        st.write('Please upload an image screenshot to get a translilterated version from **Gujarati** in **English**.')
         img_file = st.file_uploader(label="patrank_transliterated_version", label_visibility="hidden")
         #submitted = st.form_submit_button("Submit")
         if img_file is not None:
