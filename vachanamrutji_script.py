@@ -15,7 +15,7 @@ def main():
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
     read_me = st.markdown("""
     This project was built using Streamlit and Ai4-bharat transliteration  
-    to create transliterated version of Patranks from Gujarati to English.""")
+    to create transliterated version from Gujarati to English.""")
     st.sidebar.title("Select Activity")
     xlit_engine = load_model()
     values =["About", "Transliteration (English)"]
