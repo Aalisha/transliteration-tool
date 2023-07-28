@@ -17,7 +17,7 @@ def main():
     This project was built using Streamlit and Ai4-bharat transliteration  
     to create transliterated version from Gujarati to English.""")
     st.sidebar.title("Select Activity")
-    xlit_engine = XlitEngine(beam_width=10, src_script_type = "indic")
+    xlit_engine = XlitEngine(src_script_type = "indic", beam_width=10)
     values =["About", "Transliteration (English)"]
     choice  = st.sidebar.selectbox("MODE", values, index=1)
     text = ""
