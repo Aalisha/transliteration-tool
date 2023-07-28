@@ -1,5 +1,5 @@
 altair==4.0.0
-streamlit==1.22.0
+streamlit
 Pillow==9.5.0
 pytesseract==0.3.10
 ai4bharat-transliteration
