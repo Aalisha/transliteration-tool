@@ -50,8 +50,5 @@ def main():
         print()
     st.cache_resource.clear()
 
-
-        
-
 if __name__ == '__main__':
 	main()	
