@@ -27,7 +27,7 @@ def main():
         read_me_0.empty()
         read_me.empty()
         st.write('Please upload an image screenshot to get a translilterated version from **Gujarati** in **English**.')
-        img_file = st.file_uploader(label="patrank_transliterated_version", label_visibility="hidden")
+        img_file = st.file_uploader(label="transliterated_version", label_visibility="hidden")
         #submitted = st.form_submit_button("Submit")
         if img_file is not None:
             # To read image file buffer as a PIL Image:
