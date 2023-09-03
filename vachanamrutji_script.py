@@ -5,11 +5,12 @@ from ai4bharat.transliteration import XlitEngine
 
 img = Image.open('Raj_Gurudev.png')
 st.set_page_config(page_title='Vachanamrutji Transliteration tool', page_icon=img, layout="wide", initial_sidebar_state="auto")
-@st.cache_resource
-def load_model():
-    xlit_engine = XlitEngine(beam_width = 10, src_script_type = "indic")
-    return xlit_engine
 
+#@st.cache_resource
+#def load_model():
+#    xlit_engine = XlitEngine(beam_width = 10, src_script_type = "indic")
+#    return xlit_engine
+	
 def main():
     new_title = '<p style="font-size: 42px;">Transliteration App!</p>'
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
@@ -17,7 +18,7 @@ def main():
     This project was built using Streamlit and Ai4-bharat transliteration  
     to create transliterated version from Gujarati to English.""")
     st.sidebar.title("Select Activity")
-    xlit_engine = load_model()
+    #xlit_engine = load_model()
     values =["About", "Transliteration (English)"]
     choice  = st.sidebar.selectbox("MODE", values, index=1)
     text = ""
@@ -34,7 +35,7 @@ def main():
             image = Image.open(img_file)
             with st.spinner("Loading..."):
                 text = pytesseract.image_to_string(image, lang="guj")
-                docx_text = xlit_engine.translit_sentence(text, 'gu')
+                #docx_text = xlit_engine.translit_sentence(text, 'gu')
         
             c1, c2 = st.columns(2)
             with c1:
@@ -42,7 +43,7 @@ def main():
                 st.write(text)
             with c2:
                 st.subheader("Transliterated Text (English)")
-                st.write(docx_text)      
+                #st.write(docx_text)      
     elif choice == "About":   
         print()
         
