@@ -7,7 +7,7 @@ from ai4bharat.transliteration.transformer.indic2en import XlitEngineTransformer
 img = Image.open('Raj_Gurudev.png')
 st.set_page_config(page_title='Transliteration tool', page_icon=img, layout="wide", initial_sidebar_state="auto")
 
-@st.cache_resource
+#@st.cache_resource
 def load_model():
     #xlit_engine = XlitEngine(beam_width = 10, src_script_type = "indic")
     xlit_engine = XlitEngineTransformer_Indic2En(beam_width=4,rescore=True)
