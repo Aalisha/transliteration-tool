@@ -48,6 +48,9 @@ def main():
                 st.write(docx_text)      
     elif choice == "About":   
         print()
+    st.cache_resource.clear()
+
+
         
 
 if __name__ == '__main__':
