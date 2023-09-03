@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import pytesseract
 from ai4bharat.transliteration import XlitEngine
-from ai4bharat.transliteration import XlitEngineTransformer_Indic2En
+from ai4bharat.transliteration.transformer.indic2en import XlitEngineTransformer_Indic2En
 
 img = Image.open('Raj_Gurudev.png')
 st.set_page_config(page_title='Transliteration tool', page_icon=img, layout="wide", initial_sidebar_state="auto")
